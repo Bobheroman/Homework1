@@ -1,0 +1,44 @@
+@import 'vars';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    transition: all .5s;
+    cursor: pointer
+}
+
+button:hover {
+    background: white;
+    color: $Black;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@import 'index';

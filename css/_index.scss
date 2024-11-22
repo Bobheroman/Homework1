@@ -1,0 +1,36 @@
+.top {
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(225, 255, 143);
+    min-height: 800px;
+
+    &__header {
+        padding-top: 45px;
+        color: $Black;
+        max-width: 768px;
+    }
+    &__description {
+        color: $Black;
+        max-width: 720px;
+        padding-top: 24px;
+    }
+
+    &__starsUp {
+        padding-top: 69px;
+        display: grid;
+        grid-template-columns: 5% auto;
+        gap: 36px;
+        
+    }
+
+    &__star {
+        padding-top: 25px;
+    }
+
+    &__background {
+        position: absolute;
+        top: -333px;
+        right: -488px;
+    }
+
+}
