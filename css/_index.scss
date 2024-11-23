@@ -67,3 +67,73 @@
     }
 
 }
+
+.about {
+    position: relative;
+    background: rgb(32, 32, 39);
+    height: 1470px;
+
+    &__heading {
+        color: $White;
+        padding-top: 94px;
+    }
+
+    &__description {
+        color: $White;
+        padding-top: 24px;
+    }
+    &__bigStar {
+        position: absolute;
+        top: 142px;
+        right: -103px;
+    }
+    &__starsBlock {
+        position: absolute;
+        padding-left: 25px;
+        top: 770px;
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 129px;
+    }
+    &__starD {
+        padding-top: 41px;
+    }
+    &__block {
+        margin-top: 72px;
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        width: 378px;
+        height: 473px;
+    }
+    &__card {
+        border-radius: 30px;
+    }
+    &__img {
+        z-index: -1;
+    }
+
+    &__numberGame {
+        padding-left: 32px;
+        margin-top: 32px;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        width: 108px;
+        height: 36px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        color: $Black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__cardName {
+        padding-left: 32px;
+        padding-top: 16px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        color: $Black;
+    }
+}

@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
 }
 
 button {
@@ -98,4 +99,71 @@ button:hover {
   position: absolute;
   top: -333px;
   right: -488px;
+}
+
+.about {
+  position: relative;
+  background: rgb(32, 32, 39);
+  height: 1470px;
+}
+.about__heading {
+  color: rgb(255, 255, 255);
+  padding-top: 94px;
+}
+.about__description {
+  color: rgb(255, 255, 255);
+  padding-top: 24px;
+}
+.about__bigStar {
+  position: absolute;
+  top: 142px;
+  right: -103px;
+}
+.about__starsBlock {
+  position: absolute;
+  padding-left: 25px;
+  top: 770px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 129px;
+}
+.about__starD {
+  padding-top: 41px;
+}
+.about__block {
+  margin-top: 72px;
+  border-radius: 30px;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  width: 378px;
+  height: 473px;
+}
+.about__card {
+  border-radius: 30px;
+}
+.about__img {
+  z-index: -1;
+}
+.about__numberGame {
+  padding-left: 32px;
+  margin-top: 32px;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  color: rgb(32, 32, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__cardName {
+  padding-left: 32px;
+  padding-top: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: rgb(32, 32, 39);
 }/*# sourceMappingURL=style.css.map */
