@@ -18,8 +18,8 @@ button:hover {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .header {
@@ -46,6 +46,9 @@ button:hover {
   background-color: rgb(225, 255, 143);
   min-height: 800px;
 }
+.top__block {
+  max-width: 892px;
+}
 .top__header {
   padding-top: 45px;
   color: rgb(32, 32, 39);
@@ -56,14 +59,40 @@ button:hover {
   max-width: 720px;
   padding-top: 24px;
 }
+.top__button {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  margin-top: 48px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+}
 .top__starsUp {
+  padding-left: 63px;
   padding-top: 69px;
   display: grid;
-  grid-template-columns: 5% auto;
+  grid-template-columns: auto auto;
   gap: 36px;
+  max-width: 129px;
 }
-.top__star {
+.top__starsDown {
+  padding-top: 98px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 28px;
+  float: right;
+}
+.top__starU {
   padding-top: 25px;
+}
+.top__starD {
+  padding-top: 30px;
 }
 .top__background {
   position: absolute;
