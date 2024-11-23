@@ -98,16 +98,29 @@
     &__starD {
         padding-top: 41px;
     }
-    &__block {
+    &__board {
+        height: 1056px;
+        width: 1200px;
         margin-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        gap: 32px;
+    }
+    &__block {
+        z-index: 1;
         border-radius: 30px;
         box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
         background: rgb(255, 255, 255);
         width: 378px;
-        height: 473px;
-    }
-    &__card {
-        border-radius: 30px;
+        min-height: 512px;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:hover {
+            height: 20%;
+        }
     }
     &__img {
         z-index: -1;
@@ -129,8 +142,10 @@
         justify-content: center;
     }
     &__cardName {
+        max-width: 314px;
         padding-left: 32px;
         padding-top: 16px;
+        padding-bottom: 36px;
         font-size: 32px;
         font-weight: 700;
         line-height: 39px;
