@@ -18,22 +18,42 @@
     }
 
     .top {
+        min-height: 700px;
+
+        &__starsUp {
+            padding-left: 21px;
+            padding-top: 21px;
+        }
         &__block {
             display: flex;
             align-items: center;
             flex-direction: column;
         }
+        &__header {
+            max-width: 314px;
+        }
 
         &__button {
             width: 285px;
             height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &__starsUp {
+            transform: scale(0.614);
+        }
+        &__starsDown {
+            transform: scale(0.47);
+            position: absolute;
+            right: 8px;
+            top: 457px;
         }
 
         &__mobile {
             display: block;
             position: absolute;
-            top: -333px;
-            right: -488px;
+            top: -87px;
+            right: -87px;
         }
 
         &__background {

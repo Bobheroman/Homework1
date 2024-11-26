@@ -212,20 +212,41 @@ button:hover {
     line-height: 20px;
     text-align: center;
   }
+  .top {
+    min-height: 700px;
+  }
+  .top__starsUp {
+    padding-left: 21px;
+    padding-top: 21px;
+  }
   .top__block {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+  .top__header {
+    max-width: 314px;
+  }
   .top__button {
     width: 285px;
     height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .top__starsUp {
+    transform: scale(0.614);
+  }
+  .top__starsDown {
+    transform: scale(0.47);
+    position: absolute;
+    right: 8px;
+    top: 457px;
   }
   .top__mobile {
     display: block;
     position: absolute;
-    top: -333px;
-    right: -488px;
+    top: -87px;
+    right: -87px;
   }
   .top__background {
     display: none;
