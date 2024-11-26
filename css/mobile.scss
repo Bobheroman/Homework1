@@ -62,11 +62,33 @@
     }
 
     .about {
+        
+
+        &__starsBlock {
+            display: none;
+        }
+
         &__heading {
             display: none;
         }
         &__headingMobile {
             display: block;
+            color: $White;
+            padding-top: 48px;
+        }
+        &__description {
+            display: none;
+        }
+        &__bigStar {
+            display: none;
+        }
+        &__board {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &__block {
+            width: 343px;
         }
     }
 

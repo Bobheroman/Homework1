@@ -74,7 +74,7 @@
 .about {
     position: relative;
     background: rgb(32, 32, 39);
-    height: 1470px;
+    min-height: 1470px;
     overflow: hidden;
 
     &__heading {

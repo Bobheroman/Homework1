@@ -106,7 +106,7 @@ button:hover {
 .about {
   position: relative;
   background: rgb(32, 32, 39);
-  height: 1470px;
+  min-height: 1470px;
   overflow: hidden;
 }
 .about__heading {
@@ -250,5 +250,30 @@ button:hover {
   }
   .top__background {
     display: none;
+  }
+  .about__starsBlock {
+    display: none;
+  }
+  .about__heading {
+    display: none;
+  }
+  .about__headingMobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-top: 48px;
+  }
+  .about__description {
+    display: none;
+  }
+  .about__bigStar {
+    display: none;
+  }
+  .about__board {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about__block {
+    width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
