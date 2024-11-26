@@ -61,6 +61,15 @@
         }
     }
 
+    .about {
+        &__heading {
+            display: none;
+        }
+        &__headingMobile {
+            display: block;
+        }
+    }
+
 
 
 }
