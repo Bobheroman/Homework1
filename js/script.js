@@ -1,2 +1,0 @@
-confirm('confirm');
-prompt('valera')
