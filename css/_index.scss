@@ -1,8 +1,8 @@
 .top {
     position: relative;
-    flex-direction: column;
     background-color: rgb(225, 255, 143);
     min-height: 800px;
+    overflow: hidden;
 
     &__block {
         max-width: 892px;
@@ -72,6 +72,7 @@
     position: relative;
     background: rgb(32, 32, 39);
     height: 1470px;
+    overflow: hidden;
 
     &__heading {
         color: $White;
@@ -103,7 +104,8 @@
         width: 1200px;
         margin-top: 72px;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 378px 378px 378px;
+        gap: 0px 32px;
     }
     &__block {
         z-index: 1;
