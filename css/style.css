@@ -99,6 +99,9 @@ button:hover {
   top: -333px;
   right: -488px;
 }
+.top__mobile {
+  display: none;
+}
 
 .about {
   position: relative;
@@ -191,4 +194,40 @@ button:hover {
 
 .MarginMin {
   margin-top: 32px;
+}
+
+@media (max-width: 426px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .top__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top__button {
+    width: 285px;
+    height: 55px;
+  }
+  .top__mobile {
+    display: block;
+    position: absolute;
+    top: -333px;
+    right: -488px;
+  }
+  .top__background {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+@media (max-width: 426px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .top {
+        &__block {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__button {
+            width: 285px;
+            height: 55px;
+        }
+
+        &__mobile {
+            display: block;
+            position: absolute;
+            top: -333px;
+            right: -488px;
+        }
+
+        &__background {
+            display: none;
+        }
+    }
+
+
+
+}
