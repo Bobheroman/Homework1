@@ -86,9 +86,70 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
+            align-items: center;
+            margin-bottom: 54px;
         }
         &__block {
             width: 343px;
+            height: 529px;
+        }
+        &__img {
+            width: 343px;
+        }
+        &__numberGame {
+            display: none;
+        }
+        &__cardName {
+            padding-top: 29px;
+            padding-bottom: 16px;
+        }
+        &__gameDescription {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $Black;
+            padding-left: 32px;
+            width: 285px;
+        }
+        &__button {
+            display: block;
+            margin-top: 32px;
+            margin-left: 29px;
+            width: 285px;
+            height: 55px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            color: $White;
+        }
+    }
+    .blockMedium {
+        height: 567px;
+    }
+    .blockBig {
+        height: 606px;
+        margin-top: 0px;
+    }
+    .MarginMin {
+        margin-top: 0px;
+    }
+
+    .footer {
+        
+        
+        &__header {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            padding-top: 41px;
+            padding-bottom: 41px;
         }
     }
 

@@ -113,6 +113,9 @@ button:hover {
   color: rgb(255, 255, 255);
   padding-top: 94px;
 }
+.about__headingMobile {
+  display: none;
+}
 .about__description {
   color: rgb(255, 255, 255);
   padding-top: 24px;
@@ -134,12 +137,13 @@ button:hover {
   padding-top: 41px;
 }
 .about__board {
-  max-height: 1056px;
-  width: 1200px;
+  min-height: 1056px;
+  max-width: 1200px;
   margin-top: 72px;
   display: grid;
   grid-template-columns: 378px 378px 378px;
   gap: 0px 32px;
+  margin-bottom: 144px;
 }
 .about__block {
   z-index: 1;
@@ -156,6 +160,8 @@ button:hover {
 }
 .about__img {
   z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about__numberGame {
   padding-left: 32px;
@@ -182,6 +188,12 @@ button:hover {
   line-height: 39px;
   color: rgb(32, 32, 39);
 }
+.about__gameDescription {
+  display: none;
+}
+.about__button {
+  display: none;
+}
 
 .blockBig {
   height: 551px;
@@ -194,6 +206,19 @@ button:hover {
 
 .MarginMin {
   margin-top: 32px;
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+}
+.footer__header {
+  color: rgb(32, 32, 39);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
 }
 
 @media (max-width: 426px) {
@@ -272,8 +297,63 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
+    margin-bottom: 54px;
   }
   .about__block {
     width: 343px;
+    height: 529px;
+  }
+  .about__img {
+    width: 343px;
+  }
+  .about__numberGame {
+    display: none;
+  }
+  .about__cardName {
+    padding-top: 29px;
+    padding-bottom: 16px;
+  }
+  .about__gameDescription {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(32, 32, 39);
+    padding-left: 32px;
+    width: 285px;
+  }
+  .about__button {
+    display: block;
+    margin-top: 32px;
+    margin-left: 29px;
+    width: 285px;
+    height: 55px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .blockMedium {
+    height: 567px;
+  }
+  .blockBig {
+    height: 606px;
+    margin-top: 0px;
+  }
+  .MarginMin {
+    margin-top: 0px;
+  }
+  .footer__header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
 }/*# sourceMappingURL=style.css.map */
