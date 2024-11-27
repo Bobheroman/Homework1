@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+}
+
+button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: rgb(32, 32, 39);
+}
+
+.center {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.header {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.top {
+  position: relative;
+  background-color: rgb(225, 255, 143);
+  min-height: 800px;
+  overflow: hidden;
+}
+.top__block {
+  max-width: 892px;
+}
+.top__header {
+  padding-top: 45px;
+  color: rgb(32, 32, 39);
+  max-width: 768px;
+}
+.top__description {
+  color: rgb(32, 32, 39);
+  max-width: 720px;
+  padding-top: 24px;
+}
+.top__button {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  margin-top: 48px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+}
+.top__starsUp {
+  padding-left: 63px;
+  padding-top: 69px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 36px;
+  max-width: 129px;
+}
+.top__starsDown {
+  padding-top: 98px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 28px;
+  float: right;
+}
+.top__starU {
+  padding-top: 25px;
+}
+.top__starD {
+  padding-top: 30px;
+}
+.top__background {
+  position: absolute;
+  top: -333px;
+  right: -488px;
+}
+
+.about {
+  position: relative;
+  background: rgb(32, 32, 39);
+  height: 1470px;
+  overflow: hidden;
+}
+.about__heading {
+  color: rgb(255, 255, 255);
+  padding-top: 94px;
+}
+.about__description {
+  color: rgb(255, 255, 255);
+  padding-top: 24px;
+}
+.about__bigStar {
+  position: absolute;
+  top: 142px;
+  right: -103px;
+}
+.about__starsBlock {
+  position: absolute;
+  padding-left: 25px;
+  top: 770px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 129px;
+}
+.about__starD {
+  padding-top: 41px;
+}
+.about__board {
+  max-height: 1056px;
+  width: 1200px;
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 378px 378px 378px;
+  gap: 0px 32px;
+}
+.about__block {
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  width: 378px;
+  height: 473px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.about__block:hover {
+  scale: 1.07;
+}
+.about__img {
+  z-index: -1;
+}
+.about__numberGame {
+  padding-left: 32px;
+  margin-top: 32px;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  color: rgb(32, 32, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__cardName {
+  max-width: 314px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 36px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: rgb(32, 32, 39);
+}
+
+.blockBig {
+  height: 551px;
+  margin-top: -8px;
+}
+
+.blockMedium {
+  height: 512px;
+}
+
+.MarginMin {
+  margin-top: 32px;
+}/*# sourceMappingURL=style.css.map */
