@@ -5,7 +5,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  max-width: 1440px;
 }
 
 button {
@@ -19,8 +18,8 @@ button:hover {
 }
 
 .center {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -100,16 +99,22 @@ button:hover {
   top: -333px;
   right: -488px;
 }
+.top__mobile {
+  display: none;
+}
 
 .about {
   position: relative;
   background: rgb(32, 32, 39);
-  height: 1470px;
+  min-height: 1470px;
   overflow: hidden;
 }
 .about__heading {
   color: rgb(255, 255, 255);
   padding-top: 94px;
+}
+.about__headingMobile {
+  display: none;
 }
 .about__description {
   color: rgb(255, 255, 255);
@@ -132,12 +137,13 @@ button:hover {
   padding-top: 41px;
 }
 .about__board {
-  max-height: 1056px;
-  width: 1200px;
+  min-height: 1056px;
+  max-width: 1200px;
   margin-top: 72px;
   display: grid;
   grid-template-columns: 378px 378px 378px;
   gap: 0px 32px;
+  margin-bottom: 144px;
 }
 .about__block {
   z-index: 1;
@@ -154,6 +160,8 @@ button:hover {
 }
 .about__img {
   z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about__numberGame {
   padding-left: 32px;
@@ -180,6 +188,12 @@ button:hover {
   line-height: 39px;
   color: rgb(32, 32, 39);
 }
+.about__gameDescription {
+  display: none;
+}
+.about__button {
+  display: none;
+}
 
 .blockBig {
   height: 551px;
@@ -192,4 +206,154 @@ button:hover {
 
 .MarginMin {
   margin-top: 32px;
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+}
+.footer__header {
+  color: rgb(32, 32, 39);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+@media (max-width: 426px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .top {
+    min-height: 700px;
+  }
+  .top__starsUp {
+    padding-left: 21px;
+    padding-top: 21px;
+  }
+  .top__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top__header {
+    max-width: 314px;
+  }
+  .top__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .top__starsUp {
+    transform: scale(0.614);
+  }
+  .top__starsDown {
+    transform: scale(0.47);
+    position: absolute;
+    right: 8px;
+    top: 457px;
+  }
+  .top__mobile {
+    display: block;
+    position: absolute;
+    top: -87px;
+    right: -87px;
+  }
+  .top__background {
+    display: none;
+  }
+  .about__starsBlock {
+    display: none;
+  }
+  .about__heading {
+    display: none;
+  }
+  .about__headingMobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-top: 48px;
+  }
+  .about__description {
+    display: none;
+  }
+  .about__bigStar {
+    display: none;
+  }
+  .about__board {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+  .about__block {
+    width: 343px;
+    height: 529px;
+  }
+  .about__img {
+    width: 343px;
+  }
+  .about__numberGame {
+    display: none;
+  }
+  .about__cardName {
+    padding-top: 29px;
+    padding-bottom: 16px;
+  }
+  .about__gameDescription {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(32, 32, 39);
+    padding-left: 32px;
+    width: 285px;
+  }
+  .about__button {
+    display: block;
+    margin-top: 32px;
+    margin-left: 29px;
+    width: 285px;
+    height: 55px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .blockMedium {
+    height: 567px;
+  }
+  .blockBig {
+    height: 606px;
+    margin-top: 0px;
+  }
+  .MarginMin {
+    margin-top: 0px;
+  }
+  .footer__header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
 }/*# sourceMappingURL=style.css.map */

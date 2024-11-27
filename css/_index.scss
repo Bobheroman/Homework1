@@ -65,18 +65,24 @@
         top: -333px;
         right: -488px;
     }
+    &__mobile{
+        display: none;
+    }
 
 }
 
 .about {
     position: relative;
     background: rgb(32, 32, 39);
-    height: 1470px;
+    min-height: 1470px;
     overflow: hidden;
 
     &__heading {
         color: $White;
         padding-top: 94px;
+    }
+    &__headingMobile {
+        display: none;
     }
 
     &__description {
@@ -100,12 +106,13 @@
         padding-top: 41px;
     }
     &__board {
-        max-height: 1056px;
-        width: 1200px;
+        min-height: 1056px;
+        max-width: 1200px;
         margin-top: 72px;
         display: grid;
         grid-template-columns: 378px 378px 378px;
         gap: 0px 32px;
+        margin-bottom: 144px;
     }
     &__block {
         z-index: 1;
@@ -124,6 +131,9 @@
 
     &__img {
         z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
 
     &__numberGame {
@@ -151,6 +161,12 @@
         line-height: 39px;
         color: $Black;
     }
+    &__gameDescription {
+        display: none;
+    }
+    &__button {
+        display: none;
+    }
 }
 .blockBig {
     height: 551px;
@@ -161,4 +177,19 @@
 }
 .MarginMin {
     margin-top: 32px;
+}
+
+.footer {
+    background: rgb(189, 237, 53);
+    
+
+    &__header {
+        color: $Black;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
 }
