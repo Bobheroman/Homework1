@@ -6,7 +6,7 @@ alert(`А теперь = ${a}`);
 
 //задание 2
 let firstIphone = Number(2007);
-alert(`Первый iPhone вышел в ${a} году.`);
+alert(`Первый iPhone вышел в ${firstIphone} году.`);
 
 //задние 3
 let jsFather = String('Brendan Eich');
