@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+
+    .center {
+        padding-left: calc(50% - 340px);
+        padding-right: calc(50% - 340px);
+    }
+    .top {
+        min-height: 700px;
+        
+        &__block {
+            max-width: 792px;
+        }
+        
+        &__starsDown,
+        &__starsUp {
+            transform: scale(0.5);
+        }
+
+        &__background {
+            top: -526px;
+            right: -497px;
+            transform: scale(0.5);
+        }
+    }
+    .about {
+
+        &__numberGame {
+            padding-left: 0px;
+            margin-left: 32px;
+        }
+        &__cardName {
+            font-size: 28px;
+            line-height: 30px;
+        }
+        &__heading {
+            padding-top: 60px;
+        }
+
+        &__board {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 40px;
+            margin-bottom: 54px;
+        }
+        &__block {
+            width: 320px;
+            height: 529px;
+        }
+        &__img {
+            width: 320px;
+        }
+    }
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+        
+    }
+    .header {
+        font-size: 50px;
+        width: 610px;
+        line-height: 54px;
+        
+    }
+    .about__block {
+        height: 500px;
+    }
+    .blockMedium {
+        height: 500px;
+    }
+    .blockBig {
+        height: 500px;
+        margin-top: 0px;
+    }
+    .MarginMin {
+        margin-top: 0px;
+    }
+    .footer__header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+}

@@ -356,4 +356,75 @@ button:hover {
     padding-top: 41px;
     padding-bottom: 41px;
   }
+}
+@media (max-width: 768px) {
+  .center {
+    padding-left: calc(50% - 340px);
+    padding-right: calc(50% - 340px);
+  }
+  .top {
+    min-height: 700px;
+  }
+  .top__block {
+    max-width: 792px;
+  }
+  .top__starsDown, .top__starsUp {
+    transform: scale(0.5);
+  }
+  .top__background {
+    top: -526px;
+    right: -497px;
+    transform: scale(0.5);
+  }
+  .about__numberGame {
+    padding-left: 0px;
+    margin-left: 32px;
+  }
+  .about__cardName {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .about__heading {
+    padding-top: 60px;
+  }
+  .about__board {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin-bottom: 54px;
+  }
+  .about__block {
+    width: 320px;
+    height: 529px;
+  }
+  .about__img {
+    width: 320px;
+  }
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .header {
+    font-size: 50px;
+    width: 610px;
+    line-height: 54px;
+  }
+  .about__block {
+    height: 500px;
+  }
+  .blockMedium {
+    height: 500px;
+  }
+  .blockBig {
+    height: 500px;
+    margin-top: 0px;
+  }
+  .MarginMin {
+    margin-top: 0px;
+  }
+  .footer__header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
