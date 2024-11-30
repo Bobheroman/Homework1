@@ -1,67 +1,66 @@
 // задание 1
-let a = Number(10);
-alert(`Значение А = ${a}`);
-a = 20;
-alert(`А теперь = ${a}`);
+let password = 'пароль';
+let userPassword = prompt('Введите пароль');
+console.log(password === userPassword? 'Пароль введён верно' : 'Пароль введён неправильно');
 
 //задание 2
-let firstIphone = Number(2007);
-alert(`Первый iPhone вышел в ${firstIphone} году.`);
+let c = 2;
+if (c > 0 && c < 10 ) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
 
 //задние 3
-let jsFather = String('Brendan Eich');
-alert(`Создатель JavaScript ${jsFather}`);
+let d = 12;
+let e = 50;
+if (d > 100 || e > 100 ) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
 
 //задание 4
-let x = Number(10);
-let y = Number(2);
-alert(`${x} + ${y} = ${x + y}`);
-alert(`${x} - ${y} = ${x - y}`);
-alert(`${x} * ${y} = ${x * y}`);
-alert(`${x} / ${y} = ${x / y}`);
+let a = '2';
+let b = '3';
+// Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
+alert(Number(a) + Number(b));
 
 //задание 5
-let exponentiation = Number(2**5);
-alert(`2 в степени 5 = ${exponentiation}`)
+let monthNumber = 12;
+switch (monthNumber) {
+    case 12||1||2:
+        console.log('Это Зима');
+        break;
 
-//задание 6
-let c = Number(9);
-let b = Number(2);
-alert(`Остаток деления ${C} на ${b} = ${c % b}`);
+     case 3||4||5:
+        console.log('Это Весна');
+        break;
 
-//задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
-alert(num);
+    case 6||7||8:
+         console.log('Это Лето');
+         break;
 
-//задание 8
-let age = prompt(Number('Сколько вам лет?'));
-alert(`Вам ${age} лет.`);
+    case 9||10||11:
+        console.log('Это Осень');
+        break;
 
-//задание 9
-const user = {
-    name: String('Valera'),
-    age: Number(25),
-    isAdmin: Boolean(true),
-    }
-
-//задание 10
-let yourName = prompt(String('Как вас зовут?'));
-alert(`Привет ${yourName}!`)
+    default:
+        console.log('Нет такого месяца');
+}
 
 //Доп задание
-let number = prompt(Number('Введите число'));
-let number1 = Number(number * 2);
-let number2 = Number(number1 + 10);
-let number3 = Number(number2 / 2);
-let number4 = Number(number3 - number);
-alert(`${number} * 2 = ${number1}
-    ${number1} + 10 = ${number2}
-    ${number2} / 2 = ${number3}
-    ${number3} - ${number} = ${number4}
-    ответ всегда равен 5 :)`)
+let number = Number(prompt('введите число'));
+switch (number) {
+    case Number.isNaN(number):
+        alert('это не число');
+        break;
+
+    case number % 2 !== 0:
+        alert('Число нечетное');
+        break;
+
+    default:
+        alert('Число четное');
+        break;
+}
