@@ -42,6 +42,9 @@ button:hover {
 .bold {
     font-weight: bold;
 }
+.rotate {
+    transform: rotate(-5deg);
+}
 
 @import 'index';
 @import 'tablet';

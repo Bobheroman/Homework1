@@ -40,6 +40,10 @@ button:hover {
   font-weight: bold;
 }
 
+.rotate {
+  transform: rotate(-5deg);
+}
+
 .top {
   position: relative;
   background-color: rgb(225, 255, 143);
@@ -216,11 +220,13 @@ button:hover {
 }
 .games__header {
   color: rgb(255, 255, 255);
+  padding-bottom: 72px;
 }
 .games__starsBlock {
   position: absolute;
   padding-left: 25px;
-  top: 770px;
+  top: 47px;
+  right: 44px;
   display: grid;
   grid-template-columns: auto auto;
   max-width: 129px;
@@ -228,20 +234,33 @@ button:hover {
 .games__starD {
   padding-top: 41px;
 }
+.games__board {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 144px;
+}
 .games__block {
   z-index: 1;
   border-radius: 30px;
-  box-shadow: 0px 20px 67px -12px;
   background: rgb(255, 255, 255);
   max-width: 1200px;
   height: 500px;
   transition: all 0.5s;
   text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  transition: all 0.5s;
+}
+.games__block:hover {
+  box-shadow: 0px 20px 67px -12px;
 }
 .games__img {
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 .games__numberGame {
   padding-left: 32px;
@@ -259,14 +278,48 @@ button:hover {
   justify-content: center;
 }
 .games__cardName {
-  max-width: 314px;
+  max-width: 504px;
   padding-left: 32px;
   padding-top: 16px;
   padding-bottom: 36px;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 59px;
   color: rgb(32, 32, 39);
+}
+.games__gameDescription {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(32, 32, 39);
+  padding-left: 32px;
+  width: 285px;
+}
+.games__button {
+  display: block;
+  margin-top: 32px;
+  margin-left: 29px;
+  width: 285px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.games__starsBlockD {
+  position: absolute;
+  padding-left: 25px;
+  top: 3366px;
+  right: 44px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 129px;
+  gap: 29px;
 }
 
 .footer {
