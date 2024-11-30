@@ -179,6 +179,73 @@
     margin-top: 32px;
 }
 
+.games {
+    position: relative;
+    padding-top: 46px;
+    background: rgb(32, 32, 39);
+    overflow: hidden;
+    border-top: 0.5px solid rgb(189, 237, 53);
+
+    &__header {
+        color: $White;
+    }
+
+    &__starsBlock {
+        position: absolute;
+        padding-left: 25px;
+        top: 770px;
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 129px;
+    }
+    &__starD {
+        padding-top: 41px;
+    }
+
+    &__block {
+        z-index: 1;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px;
+        background: rgb(255, 255, 255);
+        max-width: 1200px;
+        height: 500px;
+        transition: all 0.5s;
+        text-decoration: none;
+    }
+    &__img {
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &__numberGame {
+        padding-left: 32px;
+        margin-top: 32px;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        width: 108px;
+        height: 36px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        color: $Black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__cardName {
+        max-width: 314px;
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 36px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        color: $Black;
+    }
+}
+
 .footer {
     background: rgb(189, 237, 53);
     
