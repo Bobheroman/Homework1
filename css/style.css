@@ -561,7 +561,7 @@ button:hover {
   }
   .about__block {
     width: 343px;
-    height: 529px;
+    height: auto;
   }
   .about__img {
     width: 343px;
@@ -597,12 +597,16 @@ button:hover {
     line-height: 141.69%;
     text-align: center;
     color: rgb(255, 255, 255);
+    margin-bottom: 32px;
   }
   .blockMedium {
-    height: 567px;
+    height: auto;
+  }
+  .mobileHeight {
+    height: auto;
   }
   .blockBig {
-    height: 606px;
+    height: auto;
     margin-top: 0px;
   }
   .MarginMin {

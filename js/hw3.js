@@ -27,40 +27,32 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 //задание 5
-let monthNumber = 12;
-switch (monthNumber) {
-    case 12||1||2:
-        console.log('Это Зима');
-        break;
+let monthNumber = 3;
+if (monthNumber === 12 || monthNumber === 1|| monthNumber === 2) {
+    console.log('Это Зима');
 
-     case 3||4||5:
-        console.log('Это Весна');
-        break;
+} else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
+    console.log('Это Весна');
 
-    case 6||7||8:
-         console.log('Это Лето');
-         break;
+} else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
+    console.log('Это Лето');
 
-    case 9||10||11:
-        console.log('Это Осень');
-        break;
-
-    default:
-        console.log('Нет такого месяца');
+} else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
+    console.log('Это Осень');
+} else {
+    console.log('Нет такого месяца');
 }
 
-//Доп задание
+
+// //Доп задание
+
 let number = Number(prompt('введите число'));
-switch (number) {
-    case Number.isNaN(number):
-        alert('это не число');
-        break;
+if (Number.isNaN(number)) {
+    alert('это не число');
 
-    case number % 2 !== 0:
-        alert('Число нечетное');
-        break;
+} else if (number % 2 !== 0) {
+    alert('Число нечетное');
 
-    default:
-        alert('Число четное');
-        break;
+} else {
+    alert('Число четное');
 }
