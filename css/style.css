@@ -155,10 +155,12 @@ button:hover {
   background: rgb(255, 255, 255);
   width: 378px;
   height: 473px;
+}
+.about__link {
   transition: all 0.5s;
   text-decoration: none;
 }
-.about__block:hover {
+.about__link:hover {
   scale: 1.07;
 }
 .about__img {
@@ -167,7 +169,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 .about__numberGame {
-  padding-left: 32px;
+  margin-left: 32px;
   margin-top: 32px;
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
@@ -293,7 +295,7 @@ button:hover {
   line-height: 32px;
   color: rgb(32, 32, 39);
   padding-left: 32px;
-  width: 285px;
+  width: 450px;
 }
 .games__button {
   display: block;

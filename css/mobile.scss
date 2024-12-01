@@ -132,10 +132,13 @@
         }
     }
     .blockMedium {
-        height: 567px;
+        height: auto;
+    }
+    .mobileHeight {
+        height: auto;
     }
     .blockBig {
-        height: 606px;
+        height: auto;
         margin-top: 0px;
     }
     .MarginMin {
