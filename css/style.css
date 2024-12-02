@@ -257,6 +257,9 @@ button:hover {
 .games__block:hover {
   box-shadow: 0px 20px 67px -12px;
 }
+.games__boardMini {
+  padding: 48px;
+}
 .games__img {
   z-index: -1;
   background-size: cover;
@@ -281,9 +284,7 @@ button:hover {
 }
 .games__cardName {
   max-width: 504px;
-  padding-left: 32px;
-  padding-top: 16px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
@@ -294,22 +295,19 @@ button:hover {
   font-weight: 400;
   line-height: 32px;
   color: rgb(32, 32, 39);
-  padding-left: 32px;
   width: 450px;
 }
 .games__button {
-  display: block;
-  margin-top: 32px;
-  margin-left: 29px;
-  width: 285px;
-  height: 55px;
+  margin-top: 36px;
+  width: 247px;
+  height: 66px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 600;
-  line-height: 141.69%;
+  line-height: 142%;
   text-align: center;
   color: rgb(255, 255, 255);
 }
