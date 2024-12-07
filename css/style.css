@@ -483,6 +483,9 @@ button:hover {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .games {
+    display: none;
+  }
   .header {
     font-size: 40px;
     font-weight: 700;
