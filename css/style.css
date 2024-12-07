@@ -40,6 +40,10 @@ button:hover {
   font-weight: bold;
 }
 
+.rotate {
+  transform: rotate(-5deg);
+}
+
 .top {
   position: relative;
   background-color: rgb(225, 255, 143);
@@ -151,10 +155,12 @@ button:hover {
   background: rgb(255, 255, 255);
   width: 378px;
   height: 473px;
+}
+.about__link {
   transition: all 0.5s;
   text-decoration: none;
 }
-.about__block:hover {
+.about__link:hover {
   scale: 1.07;
 }
 .about__img {
@@ -163,7 +169,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 .about__numberGame {
-  padding-left: 32px;
+  margin-left: 32px;
   margin-top: 32px;
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
@@ -205,6 +211,115 @@ button:hover {
 
 .MarginMin {
   margin-top: 32px;
+}
+
+.games {
+  position: relative;
+  padding-top: 46px;
+  background: rgb(32, 32, 39);
+  overflow: hidden;
+  border-top: 0.5px solid rgb(189, 237, 53);
+}
+.games__header {
+  color: rgb(255, 255, 255);
+  padding-bottom: 72px;
+}
+.games__starsBlock {
+  position: absolute;
+  padding-left: 25px;
+  top: 47px;
+  right: 44px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 129px;
+}
+.games__starD {
+  padding-top: 41px;
+}
+.games__board {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 144px;
+}
+.games__block {
+  z-index: 1;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  max-width: 1200px;
+  height: 500px;
+  transition: all 0.5s;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  transition: all 0.5s;
+}
+.games__block:hover {
+  box-shadow: 0px 20px 67px -12px;
+}
+.games__boardMini {
+  padding: 48px;
+}
+.games__img {
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.games__numberGame {
+  padding-left: 32px;
+  margin-top: 32px;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  color: rgb(32, 32, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.games__cardName {
+  max-width: 504px;
+  padding-bottom: 24px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  color: rgb(32, 32, 39);
+}
+.games__gameDescription {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(32, 32, 39);
+  width: 450px;
+}
+.games__button {
+  margin-top: 36px;
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 142%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.games__starsBlockD {
+  position: absolute;
+  padding-left: 25px;
+  top: 3366px;
+  right: 44px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 129px;
+  gap: 29px;
 }
 
 .footer {
@@ -444,7 +559,7 @@ button:hover {
   }
   .about__block {
     width: 343px;
-    height: 529px;
+    height: auto;
   }
   .about__img {
     width: 343px;
@@ -480,12 +595,16 @@ button:hover {
     line-height: 141.69%;
     text-align: center;
     color: rgb(255, 255, 255);
+    margin-bottom: 32px;
   }
   .blockMedium {
-    height: 567px;
+    height: auto;
+  }
+  .mobileHeight {
+    height: auto;
   }
   .blockBig {
-    height: 606px;
+    height: auto;
     margin-top: 0px;
   }
   .MarginMin {

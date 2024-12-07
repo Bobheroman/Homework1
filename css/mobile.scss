@@ -92,7 +92,7 @@
         }
         &__block {
             width: 343px;
-            height: 529px;
+            height: auto;
         }
         &__img {
             width: 343px;
@@ -129,13 +129,17 @@
             line-height: 141.69%;
             text-align: center;
             color: $White;
+            margin-bottom: 32px;
         }
     }
     .blockMedium {
-        height: 567px;
+        height: auto;
+    }
+    .mobileHeight {
+        height: auto;
     }
     .blockBig {
-        height: 606px;
+        height: auto;
         margin-top: 0px;
     }
     .MarginMin {
