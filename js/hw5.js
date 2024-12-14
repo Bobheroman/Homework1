@@ -1,10 +1,15 @@
-const user = {
-    name: 'Валера',
-    age: 23,
-    city: 'Москва',
-    getInfo() {
-        console.log(`${user.name} живёт в ${user.city}`);
+function random() {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(randomNumber);
+
+let userNumber = prompt('Введите число');
+while (userNumber != randomNumber) {
+    if (userNumber > randomNumber) {
+        userNumber = prompt('Много');
+
+    } else if (userNumber < randomNumber) {
+        userNumber = prompt('Мало');
     }
 }
-
-user.getInfo();
+alert('Угадал!');
+}
