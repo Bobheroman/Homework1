@@ -77,7 +77,7 @@ button:hover {
   line-height: 141.69%;
   text-align: center;
 }
-.top__starsUp {
+.top__stars-up {
   padding-left: 63px;
   padding-top: 69px;
   display: grid;
@@ -85,17 +85,17 @@ button:hover {
   gap: 36px;
   max-width: 129px;
 }
-.top__starsDown {
+.top__stars-down {
   padding-top: 98px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 28px;
   float: right;
 }
-.top__starU {
+.top__staru {
   padding-top: 25px;
 }
-.top__starD {
+.top__stard {
   padding-top: 30px;
 }
 .top__background {
@@ -116,19 +116,19 @@ button:hover {
   color: rgb(255, 255, 255);
   padding-top: 94px;
 }
-.about__headingMobile {
+.about__heading-mobile {
   display: none;
 }
 .about__description {
   color: rgb(255, 255, 255);
   padding-top: 24px;
 }
-.about__bigStar {
+.about__big-star {
   position: absolute;
   top: 142px;
   right: -103px;
 }
-.about__starsBlock {
+.about__stars-block {
   position: absolute;
   padding-left: 25px;
   top: 770px;
@@ -136,7 +136,7 @@ button:hover {
   grid-template-columns: auto auto;
   max-width: 129px;
 }
-.about__starD {
+.about__stard {
   padding-top: 41px;
 }
 .about__board {
@@ -155,20 +155,20 @@ button:hover {
   background: rgb(255, 255, 255);
   width: 378px;
   height: 473px;
+  transition: all 0.5s;
+}
+.about__block:hover {
+  scale: 1.07;
 }
 .about__link {
-  transition: all 0.5s;
   text-decoration: none;
-}
-.about__link:hover {
-  scale: 1.07;
 }
 .about__img {
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.about__numberGame {
+.about__number-game {
   margin-left: 32px;
   margin-top: 32px;
   border-radius: 52.58px;
@@ -183,7 +183,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.about__cardName {
+.about__card-name {
   max-width: 314px;
   padding-left: 32px;
   padding-top: 16px;
@@ -193,23 +193,23 @@ button:hover {
   line-height: 39px;
   color: rgb(32, 32, 39);
 }
-.about__gameDescription {
+.about__game-description {
   display: none;
 }
 .about__button {
   display: none;
 }
 
-.blockBig {
+.block-big {
   height: 551px;
   margin-top: -8px;
 }
 
-.blockMedium {
+.block-medium {
   height: 512px;
 }
 
-.MarginMin {
+.margin-min {
   margin-top: 32px;
 }
 
@@ -224,7 +224,7 @@ button:hover {
   color: rgb(255, 255, 255);
   padding-bottom: 72px;
 }
-.games__starsBlock {
+.games__stars-block {
   position: absolute;
   padding-left: 25px;
   top: 47px;
@@ -233,7 +233,7 @@ button:hover {
   grid-template-columns: auto auto;
   max-width: 129px;
 }
-.games__starD {
+.games__stard {
   padding-top: 41px;
 }
 .games__board {
@@ -257,7 +257,7 @@ button:hover {
 .games__block:hover {
   box-shadow: 0px 20px 67px -12px;
 }
-.games__boardMini {
+.games__board-mini {
   padding: 48px;
 }
 .games__img {
@@ -267,7 +267,7 @@ button:hover {
   width: 100%;
   height: auto;
 }
-.games__numberGame {
+.games__number-game {
   padding-left: 32px;
   margin-top: 32px;
   border-radius: 52.58px;
@@ -282,7 +282,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.games__cardName {
+.games__card-name {
   max-width: 504px;
   padding-bottom: 24px;
   font-size: 48px;
@@ -290,7 +290,7 @@ button:hover {
   line-height: 59px;
   color: rgb(32, 32, 39);
 }
-.games__gameDescription {
+.games__game-description {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -311,7 +311,7 @@ button:hover {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.games__starsBlockD {
+.games__stars-blockd {
   position: absolute;
   padding-left: 25px;
   top: 3366px;
@@ -346,7 +346,7 @@ button:hover {
   .top__block {
     max-width: 792px;
   }
-  .top__starsDown, .top__starsUp {
+  .top__stars-down, .top__stars-up {
     transform: scale(0.5);
   }
   .top__background {
@@ -354,11 +354,11 @@ button:hover {
     right: -497px;
     transform: scale(0.5);
   }
-  .about__numberGame {
+  .about__number-game {
     padding-left: 0px;
     margin-left: 32px;
   }
-  .about__cardName {
+  .about__card-name {
     font-size: 28px;
     line-height: 30px;
   }
@@ -391,14 +391,14 @@ button:hover {
   .about__block {
     height: 450px;
   }
-  .blockMedium {
+  .block-medium {
     height: 450px;
   }
-  .blockBig {
+  .block-big {
     height: 450px;
     margin-top: 0px;
   }
-  .MarginMin {
+  .margin-min {
     margin-top: 0px;
   }
   .footer__header {
@@ -418,7 +418,7 @@ button:hover {
   .top__block {
     max-width: 792px;
   }
-  .top__starsDown, .top__starsUp {
+  .top__stars-down, .top__stars-up {
     transform: scale(0.5);
   }
   .top__background {
@@ -426,11 +426,11 @@ button:hover {
     right: -497px;
     transform: scale(0.5);
   }
-  .about__numberGame {
+  .about__number-game {
     padding-left: 0px;
     margin-left: 32px;
   }
-  .about__cardName {
+  .about__card-name {
     font-size: 28px;
     line-height: 30px;
   }
@@ -462,14 +462,14 @@ button:hover {
   .about__block {
     height: 500px;
   }
-  .blockMedium {
+  .block-medium {
     height: 500px;
   }
-  .blockBig {
+  .block-big {
     height: 500px;
     margin-top: 0px;
   }
-  .MarginMin {
+  .margin-min {
     margin-top: 0px;
   }
   .footer__header {
@@ -500,7 +500,7 @@ button:hover {
   .top {
     min-height: 700px;
   }
-  .top__starsUp {
+  .top__stars-up {
     padding-left: 21px;
     padding-top: 21px;
   }
@@ -518,10 +518,10 @@ button:hover {
     font-size: 16px;
     font-weight: 600;
   }
-  .top__starsUp {
+  .top__stars-up {
     transform: scale(0.614);
   }
-  .top__starsDown {
+  .top__stars-down {
     transform: scale(0.47);
     position: absolute;
     right: 8px;
@@ -536,13 +536,13 @@ button:hover {
   .top__background {
     display: none;
   }
-  .about__starsBlock {
+  .about__stars-block {
     display: none;
   }
   .about__heading {
     display: none;
   }
-  .about__headingMobile {
+  .about__heading-mobile {
     display: block;
     color: rgb(255, 255, 255);
     padding-top: 48px;
@@ -550,7 +550,7 @@ button:hover {
   .about__description {
     display: none;
   }
-  .about__bigStar {
+  .about__big-star {
     display: none;
   }
   .about__board {
@@ -567,14 +567,14 @@ button:hover {
   .about__img {
     width: 343px;
   }
-  .about__numberGame {
+  .about__number-game {
     display: none;
   }
-  .about__cardName {
+  .about__card-name {
     padding-top: 29px;
     padding-bottom: 16px;
   }
-  .about__gameDescription {
+  .about__game-description {
     display: block;
     font-size: 16px;
     font-weight: 400;
@@ -600,17 +600,17 @@ button:hover {
     color: rgb(255, 255, 255);
     margin-bottom: 32px;
   }
-  .blockMedium {
+  .block-medium {
     height: auto;
   }
-  .mobileHeight {
+  .mobile-height {
     height: auto;
   }
-  .blockBig {
+  .block-big {
     height: auto;
     margin-top: 0px;
   }
-  .MarginMin {
+  .margin-min {
     margin-top: 0px;
   }
   .footer__header {
