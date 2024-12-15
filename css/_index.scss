@@ -13,6 +13,7 @@
         color: $Black;
         max-width: 768px;
     }
+
     &__description {
         color: $Black;
         max-width: 720px;
@@ -35,7 +36,7 @@
         text-align: center;
     }
 
-    &__starsUp {
+    &__stars-up {
         padding-left: 63px;
         padding-top: 69px;
         display: grid;
@@ -44,7 +45,7 @@
         max-width: 129px;
     }
 
-    &__starsDown {
+    &__stars-down {
         padding-top: 98px;
         display: grid;
         grid-template-columns: auto auto;
@@ -52,11 +53,11 @@
         float: right;
     }
 
-    &__starU {
+    &__staru {
         padding-top: 25px;
     }
 
-    &__starD {
+    &__stard {
         padding-top: 30px;
     }
 
@@ -65,7 +66,8 @@
         top: -333px;
         right: -488px;
     }
-    &__mobile{
+
+    &__mobile {
         display: none;
     }
 
@@ -74,14 +76,15 @@
 .about {
     position: relative;
     background: rgb(32, 32, 39);
-    
+
     overflow: hidden;
 
     &__heading {
         color: $White;
         padding-top: 94px;
     }
-    &__headingMobile {
+
+    &__heading-mobile {
         display: none;
     }
 
@@ -89,12 +92,14 @@
         color: $White;
         padding-top: 24px;
     }
-    &__bigStar {
+
+    &__big-star {
         position: absolute;
         top: 142px;
         right: -103px;
     }
-    &__starsBlock {
+
+    &__stars-block {
         position: absolute;
         padding-left: 25px;
         top: 770px;
@@ -102,9 +107,11 @@
         grid-template-columns: auto auto;
         max-width: 129px;
     }
-    &__starD {
+
+    &__stard {
         padding-top: 41px;
     }
+
     &__board {
         min-height: 1056px;
         max-width: 1200px;
@@ -112,8 +119,9 @@
         display: grid;
         grid-template-columns: 378px 378px 378px;
         gap: 0px 32px;
-        margin-bottom: 144px;
+        margin-bottom: 50px;
     }
+
     &__block {
         z-index: 1;
         border-radius: 30px;
@@ -121,24 +129,23 @@
         background: rgb(255, 255, 255);
         width: 378px;
         height: 473px;
-    }
-    &__link {
         transition: all .5s;
-        text-decoration: none;
-
         &:hover {
             scale: 1.07;
         }
+    }
+
+    &__link {
+        text-decoration: none;  
     }
 
     &__img {
         z-index: -1;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
 
-    &__numberGame {
+    &__number-game {
         margin-left: 32px;
         margin-top: 32px;
         border-radius: 52.58px;
@@ -153,7 +160,8 @@
         align-items: center;
         justify-content: center;
     }
-    &__cardName {
+
+    &__card-name {
         max-width: 314px;
         padding-left: 32px;
         padding-top: 16px;
@@ -163,21 +171,26 @@
         line-height: 39px;
         color: $Black;
     }
-    &__gameDescription {
+
+    &__game-description {
         display: none;
     }
+
     &__button {
         display: none;
     }
 }
-.blockBig {
+
+.block-big {
     height: 551px;
     margin-top: -8px;
 }
-.blockMedium {
+
+.block-medium {
     height: 512px;
 }
-.MarginMin {
+
+.margin-min {
     margin-top: 32px;
 }
 
@@ -193,7 +206,7 @@
         padding-bottom: 72px;
     }
 
-    &__starsBlock {
+    &__stars-block {
         position: absolute;
         padding-left: 25px;
         top: 47px;
@@ -202,7 +215,8 @@
         grid-template-columns: auto auto;
         max-width: 129px;
     }
-    &__starD {
+
+    &__stard {
         padding-top: 41px;
     }
 
@@ -219,7 +233,6 @@
         background: rgb(255, 255, 255);
         max-width: 1200px;
         height: 500px;
-        transition: all 0.5s;
         text-decoration: none;
         display: grid;
         grid-template-columns: 1fr 600px;
@@ -229,9 +242,11 @@
             box-shadow: 0px 20px 67px -12px;
         }
     }
-    &__boardMini {
+
+    &__board-mini {
         padding: 48px;
     }
+
     &__img {
         z-index: -1;
         background-size: cover;
@@ -241,7 +256,7 @@
 
     }
 
-    &__numberGame {
+    &__number-game {
         padding-left: 32px;
         margin-top: 32px;
         border-radius: 52.58px;
@@ -256,7 +271,8 @@
         align-items: center;
         justify-content: center;
     }
-    &__cardName {
+
+    &__card-name {
         max-width: 504px;
         padding-bottom: 24px;
         font-size: 48px;
@@ -264,7 +280,8 @@
         line-height: 59px;
         color: $Black;
     }
-    &__gameDescription {
+
+    &__game-description {
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -287,7 +304,8 @@
         text-align: center;
         color: $White;
     }
-    &__starsBlockD {
+
+    &__stars-blockd {
         position: absolute;
         padding-left: 25px;
         top: 3366px;
@@ -301,7 +319,7 @@
 
 .footer {
     background: rgb(189, 237, 53);
-    
+
 
     &__header {
         color: $Black;
