@@ -17,67 +17,72 @@ alert('Угадал!');
 console.log('Задание 1');
 let smallerNumber = (a, b) => {
     if (a > b) {
-    console.log(`${a} больше`);
+    result = a;
     } else {
-    console.log(`${b} больше`);
+    result = b;
     }
+    return `${result} больше`;
  }
-smallerNumber(8,6);
+console.log(smallerNumber(8,6));
 
 
 console.log('Задание 2');
 let even = (a) => {
     if (a % 2 == 0) {
-    console.log(`Число чётное`);
+    result = 'Число чётное';
     } else {
-    console.log(`Число не чётное`);
+    result = 'Число не чётное';
     }
+    return result;
  }
-even(13);
+console.log(even(13));
 
 console.log('Задание 3');
-let squareNumber = (n) => {
+let squareNumberLog = (n) => {
     result = n ** 2;
     console.log(result);
+}
+squareNumberLog(16);
+let squareNumberReturn = (n) => {
+    result = n ** 2;
     return result;
 }
-squareNumber(16);
+console.log(squareNumberReturn(16));
 
 console.log('Задание 4');
 let age = (a = (prompt('Сколько вам лет'))) => {
     if (a < 0) {
-    console.log('Вы ввели неправильное значение');
+    result = 'Вы ввели неправильное значение';
     } else if (a <= 12){
-    console.log('Привет, друг!');
+    result = 'Привет, друг!';
     } else if (a > 12) {
-        console.log('Добро пожаловать!');
+        result = 'Добро пожаловать!';
     }
+    return result;
  }
-age();
+alert(age());
 
 console.log('Задание 5');
-let multyNan = (a = (prompt('Введите первое число')), b = (prompt('Введите второе число'))) => {
+let multyNan = (a, b) => {
     if (isNaN(a) || isNaN(b)) {
-    console.log('Одно или оба значения не являются числом');
+    result = 'Одно или оба значения не являются числом';
     } else {
         result = a * b;
-        console.log(result);
-        return result;
     }
+    return result;
  }
-multyNan();
+console.log(multyNan(12, 24));
 
 console.log('Задание 6');
 let cubNumber = (a = (prompt('Введите число'))) => {
     if (isNaN(a)) {
-    console.log('Переданный параметр не является числом');
+    return 'Переданный параметр не является числом';
     } else {
         result = a ** 3;
-        console.log(`${a} в кубе равняется ${result}`);
-        return result;
+        return `${a} в кубе равняется ${result}`;
     }
  }
-cubNumber();
+console.log(cubNumber());
 
 console.log('Задание 7');
 let getArea = (circle) => {
