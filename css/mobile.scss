@@ -3,12 +3,13 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .games {
         display: none;
     }
 
     .header {
-        
+
         font-size: 40px;
         font-weight: 700;
         line-height: 49px;
@@ -24,15 +25,17 @@
     .top {
         min-height: 700px;
 
-        &__starsUp {
+        &__stars-up {
             padding-left: 21px;
             padding-top: 21px;
         }
+
         &__block {
             display: flex;
             align-items: center;
             flex-direction: column;
         }
+
         &__header {
             max-width: 314px;
         }
@@ -43,10 +46,12 @@
             font-size: 16px;
             font-weight: 600;
         }
-        &__starsUp {
+
+        &__stars-up {
             transform: scale(0.614);
         }
-        &__starsDown {
+
+        &__stars-down {
             transform: scale(0.47);
             position: absolute;
             right: 8px;
@@ -66,26 +71,30 @@
     }
 
     .about {
-        
 
-        &__starsBlock {
+
+        &__stars-block {
             display: none;
         }
 
         &__heading {
             display: none;
         }
-        &__headingMobile {
+
+        &__heading-mobile {
             display: block;
             color: $White;
             padding-top: 48px;
         }
+
         &__description {
             display: none;
         }
-        &__bigStar {
+
+        &__big-star {
             display: none;
         }
+
         &__board {
             display: flex;
             flex-direction: column;
@@ -93,21 +102,26 @@
             align-items: center;
             margin-bottom: 54px;
         }
+
         &__block {
             width: 343px;
             height: auto;
         }
+
         &__img {
             width: 343px;
         }
-        &__numberGame {
+
+        &__number-game {
             display: none;
         }
-        &__cardName {
+
+        &__card-name {
             padding-top: 29px;
             padding-bottom: 16px;
         }
-        &__gameDescription {
+
+        &__game-description {
             display: block;
             font-size: 16px;
             font-weight: 400;
@@ -116,6 +130,7 @@
             padding-left: 32px;
             width: 285px;
         }
+
         &__button {
             display: block;
             margin-top: 32px;
@@ -135,23 +150,27 @@
             margin-bottom: 32px;
         }
     }
-    .blockMedium {
+
+    .block-medium {
         height: auto;
     }
-    .mobileHeight {
+
+    .mobile-height {
         height: auto;
     }
-    .blockBig {
+
+    .block-big {
         height: auto;
         margin-top: 0px;
     }
-    .MarginMin {
+
+    .margin-min {
         margin-top: 0px;
     }
 
     .footer {
-        
-        
+
+
         &__header {
             font-size: 16px;
             font-weight: 600;
