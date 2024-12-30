@@ -1,43 +1,15 @@
 
-function arifmetic() {
-    let oneNumber = Math.floor(Math.random() * 100) + 1;
-    let secondNumber = Math.floor(Math.random() * 100) + 1;
-    const arithmeticProblems = ['+', '-', '*', '/'];
-    let randomProblems = Math.floor(Math.random() * 3) + 1;
 
-    if (arithmeticProblems[randomProblems] == '+') {
-        result = oneNumber + secondNumber;
-
-    } else if (arithmeticProblems[randomProblems] == '-') {
-        if (oneNumber < secondNumber) {
-            secondNumber = 2;
-        }
-        result = oneNumber - secondNumber;
-
-    } else if (arithmeticProblems[randomProblems] == '*') {
-        result = oneNumber * secondNumber;
-
-    } else if (oneNumber % secondNumber != 0) {
-        randomProblems = 2;
-        result = oneNumber * secondNumber;
-
-    } else {
-        result = oneNumber / secondNumber;
-    }
-    userNumber = prompt(`Сколько будет ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ?`);
-    if (userNumber == result) {
-        alert('Верно!');
-    } else {
-        alert(`Не верно ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ${result}`);
-    }
-}
 
 // Задание 1
 
 const massive = [1, 5, 4, 10, 0, 3];
-for (let i = 0; massive[i] != 10; i++) {
-
+for (let i = 0; i < massive.length; i++) {
     console.log(massive[i]);
+    if (massive[i] == 10) {
+        i = massive.length + 1;
+    }
+    
  }
 
  // Задание 2 
@@ -127,10 +99,8 @@ for (let i = 0; i < massive8.length; i++) {
 //  В каждой итерации выведите в консоль сумму текущего и следующего элементов массива.
 
 const massive9 = [1, 2, 3, 4, 5, 6, 9, 8, 7, 6, 5];
-for (let i = 0; i < massive9.length; i++) {
-    if ((i + 1) < massive9.length) {
-        console.log(`${massive9[i]} + ${massive9[i + 1]} = ${massive9[i] + massive9[i + 1]}`);
-    }
+for (let i = 0; i < massive9.length -1; i++) {
+    console.log(`${massive9[i]} + ${massive9[i + 1]} = ${massive9[i] + massive9[i + 1]}`);
  }
 
 //  Задание 11
@@ -203,12 +173,10 @@ console.log(evenNumbers);
 
 console.log('Задание 15');
 const massive13 = [];
-let summNumber = 0;
 for (let b = 0; b < 6; b++) {
     randomNumber = Math.floor(Math.random() * 10) + 0;
     massive13.push(randomNumber);
-    summNumber = summNumber + randomNumber;
 }
-let arithmeticMean = summNumber / 6;
+let arithmeticMean = massive13.reduce((total, number) => total + number, 0) / 6;
 
 console.log(`Среднее арифметическое чисел ${massive13} = ${arithmeticMean.toFixed(2)}`);
