@@ -177,6 +177,6 @@ for (let b = 0; b < 6; b++) {
     randomNumber = Math.floor(Math.random() * 10) + 0;
     massive13.push(randomNumber);
 }
-let arithmeticMean = massive13.reduce((total, number) => total + number, 0) / 6;
+let arithmeticMean = massive13.reduce((total, number) => total + number, 0) / massive13.length;
 
 console.log(`Среднее арифметическое чисел ${massive13} = ${arithmeticMean.toFixed(2)}`);

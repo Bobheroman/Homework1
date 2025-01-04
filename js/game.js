@@ -1,17 +1,17 @@
 function random() {
     let randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log(randomNumber);
+    console.log(randomNumber);
 
-let userNumber = prompt('Введите число');
-while (userNumber != randomNumber) {
-    if (userNumber > randomNumber) {
-        userNumber = prompt('Много');
+    let userNumber = prompt('Введите число');
+    while (userNumber != randomNumber) {
+        if (userNumber > randomNumber) {
+            userNumber = prompt('Много');
 
-    } else if (userNumber < randomNumber) {
-        userNumber = prompt('Мало');
+        } else if (userNumber < randomNumber) {
+            userNumber = prompt('Мало');
+        }
     }
-}
-alert('Угадал!');
+    alert('Угадал!');
 }
 
 function arifmetic() {
@@ -22,13 +22,13 @@ function arifmetic() {
     let result = 0;
 
     switch (arithmeticProblems[randomProblems]) {
-        case '+' :
+        case '+':
             result = oneNumber + secondNumber;
             break;
-        case '-' :
+        case '-':
             result = oneNumber - secondNumber;
             break;
-        case '*' :
+        case '*':
             result = oneNumber * secondNumber;
             break;
         default:
@@ -36,7 +36,7 @@ function arifmetic() {
     }
 
     userNumber = prompt(`Сколько будет ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ?`);
-    if (userNumber == result) {
+    if (userNumber == result.toFixed(2)) {
         alert('Верно!');
     } else {
         alert(`Не верно ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ${result.toFixed(2)}`);
