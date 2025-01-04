@@ -40,5 +40,45 @@ function arifmetic() {
         alert('Верно!');
     } else {
         alert(`Не верно ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ${result.toFixed(2)}`);
+    }   
+}
+
+function reversText() {
+    let userText = prompt('Введите текст');
+    const massive = userText.split('');
+    massive.reverse();
+    strok = massive.join('');
+    alert(`${userText.toLowerCase()}\n ${strok.toLowerCase()}`)
+
+}
+
+function viktorina() {
+    let userAnswers = 0;
+
+    const quiz = [
+        {
+            question: "Какой цвет неба?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    for (const i of quiz) {
+        const answer = Number(prompt(`${i.question}\n${i.options[0]}\n${i.options[1]}\n${i.options[2]}\nВведите номер правильного ответа:`));
+
+        if (answer === i.correctAnswer) {
+            userAnswers++;
+        }
     }
+    alert(`Вмкторина законченна, вы ответили верно на ${userAnswers} из ${quiz.length} вопросов`)
 }
