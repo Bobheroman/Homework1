@@ -12,7 +12,8 @@ console.log('Задание 2');
 function finder(massive, text) {
     products.forEach((massive) => {
         if (massive.toLowerCase().startsWith(text.toLowerCase())) {
-            console.log(massive);
+            const newMassive = massive; 
+            console.log(newMassive);
         }
     });
 }
