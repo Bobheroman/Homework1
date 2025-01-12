@@ -82,3 +82,27 @@ function viktorina() {
     }
     alert(`Вмкторина законченна, вы ответили верно на ${userAnswers} из ${quiz.length} вопросов`)
 }
+
+function game() {
+    const variants = ["камень", "ножницы", "бумага"];
+    let randomVarint = variants[Math.floor(Math.random() * 3)];
+    let userVarint = variants[Number(prompt(`1 ${variants[0]}\n2 ${variants[1]}\n3 ${variants[2]}\nВведите номер выбранной позиции:`)) - 1];
+
+    if (userVarint == null) {
+        alert('Некорректные данные');
+    } else if (userVarint == randomVarint) {
+        alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nНичья!`);
+
+    } else if (userVarint == 'камень' || randomVarint == 'ножницы') {
+        alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nВы победили!`);
+
+    } else if (userVarint == 'ножницы' || randomVarint == 'бумага') {
+        alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nВы победили!`);
+
+    } else if (userVarint == 'бумага' || randomVarint == 'камень') {
+        alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nВы победили!`);
+        
+    } else {
+        alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nКомпьютер победил!`);
+    }
+}
