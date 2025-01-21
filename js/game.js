@@ -40,7 +40,7 @@ function arifmetic() {
         alert('Верно!');
     } else {
         alert(`Не верно ${oneNumber} ${arithmeticProblems[randomProblems]} ${secondNumber} = ${result.toFixed(2)}`);
-    }   
+    }
 }
 
 function reversText() {
@@ -85,7 +85,7 @@ function viktorina() {
 
 function game() {
     const variants = ["камень", "ножницы", "бумага"];
-    let randomVarint = variants[Math.floor(Math.random() * 3)];
+    let randomVarint = variants[Math.floor(Math.random() * variants.length)];
     let userVarint = variants[Number(prompt(`1 ${variants[0]}\n2 ${variants[1]}\n3 ${variants[2]}\nВведите номер выбранной позиции:`)) - 1];
 
     if (userVarint == null) {
@@ -101,7 +101,7 @@ function game() {
 
     } else if (userVarint == 'бумага' || randomVarint == 'камень') {
         alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nВы победили!`);
-        
+
     } else {
         alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nКомпьютер победил!`);
     }
