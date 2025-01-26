@@ -71,6 +71,37 @@
         display: none;
     }
 
+    &__animated-strip {
+        position: absolute;
+        height: 90px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        background: rgb(188, 236, 48);
+        overflow: hidden;
+        min-width: 3220px;
+        top: 709px;
+        animation: scroll-left 12s linear infinite
+    }
+
+    &__strip-element {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 25px;
+    }
+
+}
+@keyframes scroll-left {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
 }
 
 .about {
