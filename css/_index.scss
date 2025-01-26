@@ -272,6 +272,7 @@
         grid-template-columns: 1fr 600px;
         transition: all 0.5s;
         scroll-behavior: smooth;
+        position: relative;
 
         &:hover {
             box-shadow: 0px 20px 67px -12px;
@@ -281,14 +282,52 @@
     &__board-mini {
         padding: 48px;
     }
+    &__board-mini-game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__board-mini-right {
+        padding-left: 648px;
+    }
+
+    &__input {
+        width: 100px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(2, 2, 2);
+        border-radius: 20px;
+        background: transparent;
+        padding: 0px 17px;
+        font-weight: bold;
+        font-size: 27px;
+        text-align: center;
+
+        &::placeholder {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+
+        }
+    }
 
     &__img {
         z-index: -1;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
         height: auto;
+        position: absolute;
+        left: 600px;
+        transition: all 0.5s;
 
+    }
+
+    &__img-left {
+        left: 0px;
+        transition: all 0.5s;
     }
 
     &__number-game {
@@ -338,6 +377,20 @@
         line-height: 142%;
         text-align: center;
         color: $White;
+    }
+
+    &__button-right {
+        position: absolute;
+        top: 380px;
+        right: 185px;
+    }
+    &__button-enter {
+        width: 101px;
+        background: green
+    }
+
+    &__button-cancel {
+        margin-top: 150px;
     }
 
     &__stars-blockd {

@@ -233,18 +233,27 @@
                 <div class="games__board-mini">
                     <h3 class="games__card-name">Угадай число</h3>
                     <p class="games__game-description">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="games__button" onclick="random()">Играть!</button>
+                    <button class="games__button" onclick="randomStart()">Играть!</button>
                 </div>
-                <img class="games__img" src="./img/cards/games/numbers.png" alt="numbers">
+                <div class="games__board-mini games__board-mini-game">
+                    <h3 class="games__card-name" id="gamesHeader">Введите число</h3>
+                    <input type="number" class="games__input">
+                    <button class="games__button games__button-enter" onclick="random()">Ввод</button>
+                    <button class="games__button games__button-cancel" onclick="randomStart()">Отмена</button>
+                </div>
+                <img class="games__img" id="gameRandom" src="./img/cards/games/numbers.png" alt="numbers">
+    
+                
             </article>
 
             <article class="games__block" id="arithmetic">
-                <img class="games__img" src="./img/cards/games/arithmetic.png" alt="numbers">
-                <div class="games__board-mini">
+                <img class="games__img games__img-left" src="./img/cards/games/arithmetic.png" alt="numbers">
+                <div class="games__board-mini games__board-mini-right">
                     <h3 class="games__card-name">Простая арифметика</h3>
                     <p class="games__game-description">Попробуй решить простые арифметические задачи.</p>
                     <button class="games__button" onclick="arifmetic()">Играть!</button>
                 </div>
+                
             </article>
 
             <article class="games__block" id="text">
@@ -257,8 +266,8 @@
             </article>
 
             <article class="games__block" id="quiz">
-                <img class="games__img" src="./img/cards/games/quiz.png" alt="numbers">
-                <div class="games__board-mini">
+                <img class="games__img games__img-left" src="./img/cards/games/quiz.png" alt="numbers">
+                <div class="games__board-mini games__board-mini-right">
                     <h3 class="games__card-name">Викторина</h3>
                     <p class="games__game-description">Отвечай на вопросы викторины с вариантами ответов.</p>
                     <button class="games__button" onclick="viktorina()">Играть!</button>
@@ -275,8 +284,8 @@
             </article>
 
             <article class="games__block" id="colors">
-                <img class="games__img" src="./img/cards/games/colors.png" alt="numbers">
-                <div class="games__board-mini">
+                <img class="games__img games__img-left" src="./img/cards/games/colors.png" alt="numbers">
+                <div class="games__board-mini games__board-mini-right">
                     <h3 class="games__card-name">Генератор случайных<br> цветов</h3>
                     <p class="games__game-description">Игра, в которой при клике на кнопку фон страницы меняется на
                         случайный.</p>

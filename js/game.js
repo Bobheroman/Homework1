@@ -2,17 +2,27 @@ function random() {
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     console.log(randomNumber);
 
-    let userNumber = prompt('Введите число');
-    while (userNumber != randomNumber) {
-        if (userNumber > randomNumber) {
-            userNumber = prompt('Много');
+    const userNumber = document.querySelector('.games__input');
+    const gamesHeaderEl = document.querySelector('#gamesHeader');
+    const buttonEnterEl = document.querySelector('.games__button-enter');
 
+    buttonEnterEl.addEventListener('click', () => {
+        if (userNumber > randomNumber) {
+            gamesHeaderEl.textContent = 'Много';
         } else if (userNumber < randomNumber) {
-            userNumber = prompt('Мало');
+            gamesHeaderEl.textContent = 'Мало';
+        } else {
+            gamesHeaderEl.textContent = 'Угадал';
         }
-    }
-    alert('Угадал!');
+        
+    })
 }
+
+function randomStart() {
+    const gamesImgEl = document.querySelector('#gameRandom');
+    gamesImgEl.classList.toggle('games__img-left')
+}
+
 
 function arifmetic() {
     let oneNumber = Math.floor(Math.random() * 100) + 1;
