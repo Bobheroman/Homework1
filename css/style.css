@@ -106,7 +106,36 @@ button:hover {
 .top__mobile {
   display: none;
 }
+.top__animated-strip {
+  position: absolute;
+  height: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: rgb(188, 236, 48);
+  overflow: hidden;
+  min-width: 3220px;
+  top: 709px;
+  animation: scroll-left 12s linear infinite;
+}
+.top__strip-element {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 25px;
+}
 
+@keyframes scroll-left {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
 .about {
   position: relative;
   background: rgb(32, 32, 39);
@@ -219,6 +248,7 @@ button:hover {
   background: rgb(32, 32, 39);
   overflow: hidden;
   border-top: 0.5px solid rgb(189, 237, 53);
+  transition: background-color 0.5s;
 }
 .games__header {
   color: rgb(255, 255, 255);
@@ -252,6 +282,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 600px;
   transition: all 0.5s;
+  scroll-behavior: smooth;
 }
 .games__block:hover {
   box-shadow: 0px 20px 67px -12px;
@@ -352,6 +383,14 @@ button:hover {
     top: -526px;
     right: -497px;
     transform: scale(0.5);
+  }
+  .top__animated-strip {
+    height: 50px;
+    top: 650px;
+  }
+  .top__strip-element {
+    font-size: 16px;
+    font-weight: 700;
   }
   .about__number-game {
     padding-left: 0px;
@@ -534,6 +573,14 @@ button:hover {
   }
   .top__background {
     display: none;
+  }
+  .top__animated-strip {
+    height: 50px;
+    top: 650px;
+  }
+  .top__strip-element {
+    font-size: 16px;
+    font-weight: 700;
   }
   .about__stars-block {
     display: none;

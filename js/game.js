@@ -106,3 +106,33 @@ function game() {
         alert(`Вы выбрали : ${userVarint} \nКомпьютер выбрал : ${randomVarint} \nКомпьютер победил!`);
     }
 }
+
+//Игра рандомный цвет
+const randomColorGameEl = document.querySelector('#randomColorGame');
+const siteBackgrounColorEl = document.querySelector('.games');
+
+
+randomColorGameEl.addEventListener('click', () => {
+    const arrColor = [];
+    for (let i = 0; i < 3; i++) {
+        let randomColor = Math.floor(Math.random() * 254) + 1;
+        arrColor.push(randomColor);
+    }
+    siteBackgrounColorEl.style.backgroundColor = `rgb(${arrColor[0]}, ${arrColor[1]}, ${arrColor[2]})`;
+})
+
+// плавный скролл до игр
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
