@@ -68,6 +68,16 @@
         &__background {
             display: none;
         }
+
+        &__animated-strip {
+            height: 50px;
+            top: 650px;
+        }
+    
+        &__strip-element {
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
 
     .about {
